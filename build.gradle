@@ -1,0 +1,33 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile name: 'tic_tac_toe_core'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'game.GameRunner'
+    }
+}
+
+mainClassName = "game.GameRunner";
+
+run {
+    standardInput = System.in
+}
+
