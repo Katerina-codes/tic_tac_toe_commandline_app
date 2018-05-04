@@ -1,8 +1,5 @@
 package game;
 
-import game.Board;
-import game.Game;
-
 public class GameRunner {
 
     public static void main(String[] args) {

@@ -1,11 +1,5 @@
 package game;
 
-//import org.game.Board;
-import game.Board;
-import game.Mark;
-import game.Result;
-import game.UI;
-
 import java.io.*;
 import java.util.List;
 
